@@ -1,0 +1,74 @@
+body {
+    background-size: cover;
+    background-image: url('background.png');
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+#crawlForm {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 200px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.navbar {
+    background-size: cover;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.logo {
+    width: 80px;
+    height: 80px; 
+    border-radius: 50px;
+    float: left;
+}
+
+.logo-text {
+    font-size: 32px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.main-container {
+    margin: 0;
+    padding: 20px;
+}
+

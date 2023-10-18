@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Web Crawler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar"> 
+        <img src="logo.png" alt="Logo" class="logo">
+        <p class="logo-text">Web Crawler</p>
+    </div>
+
+    <div class="main-container">
+        
+        <form id="crawlForm">
+            <label for="urlInput">Enter URL to Crawl:</label>
+            <input type="text" id="urlInput" name="urlInput" placeholder="Enter URL here">
+            <button type="button" onclick="crawl()">Crawl</button>
+        </form>
+
+        <div id="result">
+        </div>
+    </div>
+
+    <script>
+        function crawl() {
+            var url = document.getElementById('urlInput').value;
+            fetch('/crawl?url=' + encodeURIComponent(url))
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('result').innerText = data;
+                });
+        }
+    </script>
+</body>
+</html>
