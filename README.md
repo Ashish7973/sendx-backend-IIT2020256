@@ -26,7 +26,7 @@ Before you start, ensure you have the following installed:
 2. Start the Go server. Open a terminal and navigate to the project directory, then run:
 
    ```bash
-   go run main.go
+   go run backend.go
    
    
 3. The server should now be running on port 5500.
