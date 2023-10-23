@@ -28,7 +28,13 @@
             fetch('/crawl?url=' + encodeURIComponent(url))
                 .then(response => response.text())
                 .then(data => {
-                    document.getElementById('result').innerText = data;
+                    // Open a new tab or window and load the crawl_results.html
+                    var newTab = window.open('crawl_results.html');
+                    
+                    // Wait for the new tab to load, then set the content in it
+                    newTab.onload = function() {
+                        newTab.document.getElementById('resultContainer').innerHTML = data;
+                    };
                 });
         }
     </script>
